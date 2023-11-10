@@ -1,0 +1,219 @@
+@import "../../utils/media.scss";
+
+.services {
+	background: linear-gradient(180deg, #0c0c1d, #111132);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.textContainer {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: 20px;
+		@include respond(xs) {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		p {
+			font-weight: 200;
+			font-size: 20px;
+			margin-bottom: 0;
+			@include respond(xs) {
+				font-size: 15px;
+			}
+		}
+
+		hr {
+			width: 500px;
+			border: none;
+			border-top: solid 1px white;
+
+			@include respond(m) {
+				width: 200px;
+			}
+			@include respond(xs) {
+				margin: 0;
+			}
+		}
+	}
+	.titleContainer {
+		flex: 2;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		max-width: 1366px;
+		margin: auto;
+		padding: 30px 20px;
+		width: 100%;
+		@include respond(s) {
+			flex-direction: column;
+		}
+		@include respond(xs) {
+			padding: 30px 15px;
+		}
+
+		.imgCol {
+			width: 50%;
+			padding-right: 40px;
+			@include respond(s) {
+				padding: 0;
+				width: 100%;
+			}
+
+			.titleImg {
+				width: 100%;
+				// height: 350px;
+				aspect-ratio: 9/5;
+				border-radius: 50px;
+				// background-image: url("/people3.jpg");
+				// background-position: 15% 42%;
+				background-image: url("/workdesk.jpg");
+				background-position: 85% center;
+				background-size: 100%;
+				background-repeat: no-repeat;
+				margin-left: auto;
+
+				@include respond(l) {
+					width: 80%;
+				}
+				@include respond(m) {
+					width: 300px;
+				}
+				@include respond(s) {
+					margin: auto;
+					width: 500px;
+				}
+				@include respond(xs) {
+					width: 250px;
+				}
+			}
+		}
+
+		.title {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			@include respond(s) {
+				align-items: center;
+				margin-top: 30px;
+				width: 100%;
+			}
+
+			h1 {
+				font-weight: 100;
+				font-size: 60px;
+				letter-spacing: 2px;
+
+				b:hover {
+					color: orange;
+				}
+
+				@include respond(l) {
+					font-size: 40px;
+				}
+				@include respond(m) {
+					font-size: 20px;
+				}
+			}
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 300px;
+				height: 80px;
+				border-radius: 50px;
+				background-color: orange;
+				border: none;
+				font-size: 24px;
+				cursor: pointer;
+				transition: all 0.2s ease;
+				color: black;
+
+				@include respond(m) {
+					font-size: 16px;
+					width: max-content;
+					padding: 10px 20px;
+					height: auto;
+				}
+
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+	.serviceSlider {
+		// flex: 2;
+		display: flex;
+		// align-items: flex-end;
+		max-width: 1366px;
+		margin: auto;
+		@include respond(m) {
+			display: block;
+			margin: unset;
+		}
+		.slick-track {
+			display: flex !important;
+		}
+
+		.slick-slide {
+			height: inherit !important;
+
+			div {
+				height: 100%;
+			}
+		}
+
+		.box {
+			width: 25%;
+			display: flex !important;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 40px;
+			border: solid 0.5px gray;
+
+			@include respond(s) {
+				width: 300px;
+				padding: 20px;
+			}
+
+			&:hover {
+				background-color: lightgray;
+				color: black;
+
+				h6 {
+					color: black;
+				}
+			}
+
+			p {
+				@include respond(xs) {
+					font-size: 13px;
+				}
+			}
+		}
+
+		a {
+			color: black;
+			text-align: center;
+			padding: 10px;
+			background-color: orange;
+			cursor: pointer;
+			border: none;
+			margin-top: 10px;
+			transition: all 0.2s ease;
+			@include respond(xs) {
+				padding: 7px 10px;
+			}
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+}

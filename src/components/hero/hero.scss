@@ -1,0 +1,270 @@
+@import "../../utils/media.scss";
+
+.hero {
+	// height: calc(100vh - 100px);
+	height: 100vh;
+	padding-top: 100px;
+	background: linear-gradient(180deg, #0c0c1d, #111132);
+	overflow: hidden;
+	position: relative;
+
+	.wrapper {
+		max-width: 1366px;
+		height: 100%;
+		margin: auto;
+		position: relative;
+		padding: 0 20px;
+		display: flex;
+		@include respond(s) {
+			flex-direction: column;
+		}
+
+		.textContainer {
+			width: 50%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 40px;
+			position: relative;
+			z-index: 1;
+			@include respond(s) {
+				width: 100%;
+				height: 50%;
+				text-align: center;
+				align-items: center;
+			}
+			@include respond(xs) {
+				gap: 20px;
+			}
+
+			h2 {
+				font-size: 45px;
+				color: rebeccapurple;
+				letter-spacing: 7px;
+
+				@include respond(m) {
+					font-size: 30px;
+				}
+			}
+
+			h1 {
+				font-size: 88px;
+				line-height: 1.1;
+
+				@include respond(m) {
+					font-size: 50px;
+				}
+
+				@include respond(xs) {
+					font-size: 36px;
+				}
+			}
+
+			.buttons {
+				a {
+					padding: 20px;
+					border: solid 1px white;
+					border-radius: 10px;
+					background-color: transparent;
+					color: white;
+					margin-right: 20px;
+					cursor: pointer;
+					font-weight: 400;
+					display: inline-block;
+					overflow: hidden;
+					position: relative;
+
+					@include respond(xs) {
+						padding: 10px;
+					}
+
+					&:hover {
+						// color: black;
+					}
+
+					&::before {
+						z-index: -1;
+						content: "";
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						transform: translateX(100%);
+						transition: all 0.3s ease-out;
+						background-color: #432355;
+					}
+
+					&:hover::before {
+						transform: translateX(0%);
+					}
+				}
+			}
+
+			img {
+				width: 50px;
+				@include respond(xs) {
+					width: 30px;
+				}
+			}
+		}
+
+		.imageColumn {
+			position: relative;
+			width: 50%;
+			height: 100%;
+			@include respond(s) {
+				width: 100%;
+				height: 50%;
+			}
+
+			.imageContainer {
+				height: 100%;
+
+				@include respond(m) {
+					padding: 20px;
+				}
+
+				@include respond(s) {
+					text-align: center;
+				}
+
+				.colorBlock {
+					// background-color: #ffb400;
+					background-color: #432355;
+					position: absolute;
+					height: 3000px;
+					width: 3000px;
+					transform: rotate(-30deg);
+					right: -1500px;
+					top: 50%;
+					// z-index: -1;
+				}
+
+				img {
+					// height: 100%; /*original*/
+					height: calc(100vh - 180px);
+					width: auto;
+					box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+					border-radius: 80px;
+					position: absolute;
+					z-index: 1;
+					top: 40px;
+					left: 40px;
+					// left: 50%;
+					// transform: translateX(-50%);
+
+					@include respond(m) {
+						position: relative;
+						top: unset;
+						left: unset;
+						width: 100%;
+						object-fit: cover;
+					}
+
+					@include respond(s) {
+						width: auto;
+						height: 100%;
+						border-radius: 30px;
+					}
+				}
+
+				.box1 {
+					position: absolute;
+					width: 105px;
+					height: 105px;
+					border-radius: 50%;
+					top: 25px;
+					background-color: #fcba04;
+					left: -5px;
+					transform: translateX(-10px);
+					z-index: 2;
+
+					@include respond(m) {
+						display: none;
+					}
+				}
+
+				.box2 {
+					position: absolute;
+					width: 105px;
+					height: 152px;
+					background-color: #fcba04;
+					bottom: 10px;
+					left: -15px;
+					z-index: 2;
+					border-radius: 30px;
+
+					@include respond(m) {
+						display: none;
+					}
+				}
+
+				.box3 {
+					aspect-ratio: 3/4;
+					position: absolute;
+					height: calc(100vh - 180px);
+					top: 0;
+					border-radius: 80px;
+					left: 100px;
+					background-color: #432355;
+					animation: animRight2 3s linear 0s infinite alternate;
+					z-index: 1;
+				}
+
+				@keyframes animRight2 {
+					0% {
+						transform: translateX(0px) translateY(0);
+					}
+					100% {
+						transform: translateX(-20px) translateY(10px);
+					}
+				}
+
+				.box4 {
+					aspect-ratio: 3/4;
+					position: absolute;
+					height: calc(100vh - 180px);
+					top: 20px;
+					border-radius: 80px;
+					left: 150px;
+					background-color: #fcba04;
+					background-color: #76ede2;
+					animation: animRight3 4s ease 0s infinite alternate;
+					z-index: 1;
+				}
+
+				@keyframes animRight3 {
+					0% {
+						transform: translateX(0px) translateY(0);
+					}
+					100% {
+						transform: translateX(-30px) translateY(15px);
+					}
+				}
+
+				//mobile height for hero pic
+				.box3,
+				.box4 {
+					@include respond(m) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.slidingTextContainer {
+		position: absolute;
+		font-size: 50vh;
+		bottom: 0;
+		white-space: nowrap;
+		color: rgba(255, 255, 255, 0.035);
+		width: 50%;
+		font-weight: bold;
+
+		@include respond(s) {
+			font-size: 20vh;
+		}
+	}
+}
