@@ -47,7 +47,7 @@ section {
 	height: 100vh;
 	height: 100dvh;
 	min-height: -webkit-fill-available;
-	-webkit-scroll-snap-align: center;
-	scroll-snap-align: center;
+	-webkit-scroll-snap-align: start;
+	scroll-snap-align: start;
 	scroll-snap-stop: always;
 }
