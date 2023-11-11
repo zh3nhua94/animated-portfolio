@@ -5,12 +5,12 @@ import Parallax from "../../components/parallax/Parallax";
 import Services from "../../components/Services/Services";
 import Portfolio from "../../components/portfolio/Portfolio";
 import Contact from "../../components/contact/Contact";
+import ReactFullpage from "@fullpage/react-fullpage";
 
 const Home = () => {
 	return (
 		<>
 			<section id="Homepage">
-				{/* <Navbar /> */}
 				<Hero />
 			</section>
 			<section id="About">
@@ -29,5 +29,11 @@ const Home = () => {
 		</>
 	);
 };
+
+// const Home = () => {
+// 	return (
+
+// 	);
+// };
 
 export default Home;
