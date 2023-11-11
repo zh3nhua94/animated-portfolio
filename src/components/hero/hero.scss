@@ -7,6 +7,9 @@
 	background: linear-gradient(180deg, #0c0c1d, #111132);
 	overflow: hidden;
 	position: relative;
+	@include respond(xs) {
+		padding: 80px 0 40px;
+	}
 
 	.wrapper {
 		max-width: 1366px;
@@ -35,7 +38,7 @@
 				align-items: center;
 			}
 			@include respond(xs) {
-				gap: 20px;
+				gap: 13px;
 			}
 
 			h2 {
@@ -45,6 +48,10 @@
 
 				@include respond(m) {
 					font-size: 30px;
+				}
+				@include respond(xs) {
+					font-size: 24px;
+					margin-bottom: 0;
 				}
 			}
 
@@ -57,7 +64,7 @@
 				}
 
 				@include respond(xs) {
-					font-size: 36px;
+					font-size: 30px;
 				}
 			}
 
