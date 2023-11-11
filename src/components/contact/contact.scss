@@ -103,6 +103,9 @@
 			top: 50%;
 			transform: translateX(-50%) translateY(-50%);
 			width: 100%;
+			@include respond(xs) {
+				width: 80%;
+			}
 
 			svg {
 				@include respond(s) {

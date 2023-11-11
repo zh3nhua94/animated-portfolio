@@ -86,7 +86,7 @@ const Contact = () => {
 					whileInView={{ opacity: 0 }}
 					transition={{
 						duration: 1,
-						delay: 3,
+						delay: 2,
 					}}
 				>
 					<svg
@@ -124,7 +124,7 @@ const Contact = () => {
 					whileInView={isInView && { opacity: 1 }}
 					transition={{
 						duration: 1,
-						delay: 4,
+						delay: 3,
 					}}
 				>
 					<input
