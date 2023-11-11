@@ -54,7 +54,7 @@ const Links = ({ setOpen }) => {
 				Past Projects
 			</motion.a>
 			<motion.a
-				href="/blank.pdf"
+				href="/zen_resume.pdf"
 				download
 				variants={itemVariants}
 				whileHover={{ scale: 1.1 }}

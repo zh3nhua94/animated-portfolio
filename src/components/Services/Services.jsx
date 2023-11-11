@@ -123,7 +123,7 @@ const Services = () => {
 							performance and scalabilty.
 						</p>
 						<a
-							href="/blank.pdf"
+							href="/zen_resume.pdf"
 							download
 						>
 							Download CV
