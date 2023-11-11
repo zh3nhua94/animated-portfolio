@@ -1,34 +1,36 @@
 @import "bootstrap/scss/bootstrap";
 
-// html {
-// 	-webkit-scroll-snap-type: y mandatory;
-// 	scroll-snap-type: y mandatory;
-// 	scroll-behavior: smooth;
-// }
+html {
+	-webkit-scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	height: 100vh;
+	height: 100dvh;
+}
 
 * {
 	font-family: "DM Sans", sans-serif;
 }
 
-html,
-body {
-	overflow: hidden;
-}
+// html,
+// body {
+// 	overflow: hidden;
+// }
 
 body {
 	background-color: #0c0c1d;
 	color: #f2f2f2;
-	// overscroll-behavior-y: none;
+	overscroll-behavior-y: none;
 
-	> div {
-		position: relative;
-		-webkit-scroll-snap-type: y mandatory;
-		scroll-snap-type: y mandatory;
-		scroll-behavior: smooth;
-		overflow-y: scroll;
-		height: 100vh;
-		height: 100dvh;
-	}
+	// > div {
+	// 	position: relative;
+	// 	-webkit-scroll-snap-type: y mandatory;
+	// 	scroll-snap-type: y mandatory;
+	// 	scroll-behavior: smooth;
+	// 	overflow-y: scroll;
+	// 	height: 100vh;
+	// 	height: 100dvh;
+	// }
 }
 
 h1,

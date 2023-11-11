@@ -11,9 +11,11 @@ import portfolioData from "../../utils/data";
 
 const Single = ({ item, setModalShow, index, lastItem }) => {
 	const ref = useRef();
+	const containerRef = useRef();
 	const { width } = useWindowDimensions();
 	const { scrollYProgress } = useScroll({
 		target: ref,
+		// container: containerRef,
 		// offset: ["start start", "end start"],
 	});
 
@@ -22,7 +24,10 @@ const Single = ({ item, setModalShow, index, lastItem }) => {
 			? useTransform(scrollYProgress, [0, 1], [-300, 300])
 			: useTransform(scrollYProgress, [0, 1], [-100, 100]);
 	return (
-		<section className="portfolio-section">
+		<section
+			className="portfolio-section"
+			// ref={containerRef}
+		>
 			<div className="container">
 				<div className="wrapper">
 					<div
@@ -170,6 +175,7 @@ function MyVerticallyCenteredModal(props) {
 
 const Portfolio = () => {
 	const items = portfolioData;
+	// const containerRef = useRef();
 	const ref = useRef();
 	const { scrollYProgress } = useScroll({
 		target: ref,
