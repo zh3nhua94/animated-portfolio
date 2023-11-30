@@ -9,6 +9,7 @@ const portfolioData = [
 		youtubeId: "l702OToZaEQ",
 		code: "https://github.com/zh3nhua94/food-app",
 		demo: "https://gustoso-food-app.vercel.app/",
+		featured: true,
 	},
 	{
 		id: 9,
@@ -20,6 +21,7 @@ const portfolioData = [
 		youtubeId: "47gkKwgTv4c",
 		code: "https://github.com/zh3nhua94/nextjs-company",
 		demo: "https://zenenterprise.vercel.app/",
+		featured: true,
 	},
 	{
 		id: 8,
@@ -31,6 +33,19 @@ const portfolioData = [
 		youtubeId: "rmbOb2yn048",
 		code: "https://github.com/zh3nhua94/flowclub-blog",
 		demo: "https://flowclub.vercel.app/",
+		featured: true,
+	},
+	{
+		id: 13,
+		title: "Challenge by Corplabs",
+		cat: ["react", "nextjs"],
+		img: "/react/car/corplabs-carpool.jpg",
+		descTitle: "Challenge:",
+		desc: "Using any framework build on React and the provided JSON file, create a page that includes a table fulfilling the following:\n- Can be filtered by (isInProduction, brand, model, color)\n- Has pagination & user can select how much to see each page\n- Sorted & filtered results can be shared by link",
+		youtubeId: "PBPHF1M4lFU",
+		code: "https://github.com/zh3nhua94/car-listing",
+		demo: "https://carpool-coral.vercel.app/",
+		featured: true,
 	},
 	{
 		id: 7,
@@ -41,6 +56,7 @@ const portfolioData = [
 		desc: "React router DOM, Functional components, Material icons, Dynamic data fetching with Axios and hooks, React Context API actions and reducers, CRUD operations to MongoDB",
 		youtubeId: "L4xl12YKM9g",
 		code: "https://github.com/zh3nhua94/zen-social-api",
+		featured: true,
 	},
 	{
 		id: 1,

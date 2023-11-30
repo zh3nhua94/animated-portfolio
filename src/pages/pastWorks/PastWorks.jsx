@@ -33,7 +33,7 @@ function MyVerticallyCenteredModal(props) {
 				{modalItem.desc && <h6>{modalItem.descTitle ? modalItem.descTitle : "Description:"}</h6>}
 				<div className="modal-content-row">
 					<div>
-						<p>{modalItem.desc}</p>
+						<p style={{ whiteSpace: "pre-line" }}>{modalItem.desc}</p>
 					</div>
 					<div className="button-group">
 						{modalItem.code && (

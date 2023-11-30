@@ -53,7 +53,7 @@ const Single = ({ item, setModalShow, index, lastItem }) => {
 					>
 						<h2>{item.title}</h2>
 						<h5>{item.descTitle}</h5>
-						<p>{item.desc}</p>
+						<p style={{ whiteSpace: "pre-line" }}>{item.desc}</p>
 						<div className="buttonGroup">
 							<Button
 								variant="outline-warning"
@@ -129,7 +129,7 @@ function MyVerticallyCenteredModal(props) {
 				{modalItem.desc && <h6>{modalItem.descTitle ? modalItem.descTitle : "Description:"}</h6>}
 				<div className="modal-content-row">
 					<div>
-						<p>{modalItem.desc}</p>
+						<p style={{ whiteSpace: "pre-line" }}>{modalItem.desc}</p>
 					</div>
 					<div className="button-group">
 						{modalItem.code && (
@@ -200,7 +200,8 @@ const Portfolio = () => {
 				></motion.div>
 			</div>
 			{items
-				.filter((item) => item.cat.includes("react"))
+				// .filter((item) => item.cat.includes("react"))
+				.filter((item) => item.featured)
 				.map((item, index, arr) => (
 					<Single
 						item={item}
