@@ -61,7 +61,7 @@ const portfolioData = [
 	{
 		id: 14,
 		title: "Sweather Weather",
-		cat: ["vuejs, frontend"],
+		cat: ["vuejs", "frontend"],
 		img: "/vuejs/weather/weather.jpg",
 		siteImg: "/vuejs/weather/weather_2.jpg",
 		descTitle: "Technology involved:",
