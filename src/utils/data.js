@@ -44,7 +44,7 @@ const portfolioData = [
 		desc: "Using any framework build on React and the provided JSON file, create a page that includes a table fulfilling the following:\n- Can be filtered by (isInProduction, brand, model, color)\n- Has pagination & user can select how much to see each page\n- Sorted & filtered results can be shared by link",
 		youtubeId: "PBPHF1M4lFU",
 		code: "https://github.com/zh3nhua94/car-listing",
-		demo: "https://carpool-coral.vercel.app/",
+		url: "https://carpool-coral.vercel.app/",
 		featured: true,
 	},
 	{
@@ -57,6 +57,17 @@ const portfolioData = [
 		youtubeId: "L4xl12YKM9g",
 		code: "https://github.com/zh3nhua94/zen-social-api",
 		featured: true,
+	},
+	{
+		id: 14,
+		title: "Sweather Weather",
+		cat: ["vuejs, frontend"],
+		img: "/vuejs/weather/weather.jpg",
+		siteImg: "/vuejs/weather/weather_2.jpg",
+		descTitle: "Technology involved:",
+		desc: "Vue.js, Vite, Tailwind CSS, Dynamic data fetching with Axios and hooks, Open Weather Map API, MapBox API",
+		code: "https://github.com/zh3nhua94/weather/",
+		url: "https://sweather-weather.vercel.app/",
 	},
 	{
 		id: 1,
