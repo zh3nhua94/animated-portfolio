@@ -1,3 +1,4 @@
+//latest id : 15
 const portfolioData = [
 	{
 		id: 10,
@@ -57,6 +58,16 @@ const portfolioData = [
 		youtubeId: "L4xl12YKM9g",
 		code: "https://github.com/zh3nhua94/zen-social-api",
 		featured: true,
+	},
+	{
+		id: 15,
+		title: "Autumn. Ecommerce Shop",
+		cat: ["react", "frontend"],
+		img: "/react/ecommerce/autumn-shop.jpg",
+		siteImg: "/react/ecommerce/autumn-shop.jpg",
+		descTitle: "Technology involved:",
+		desc: "React router DOM, Functional components, Material icons, Dynamic data fetching with Axios and hooks, React Context API actions and reducers, CRUD operations to MongoDB",
+		code: "https://github.com/zh3nhua94/autumn-ecommerce",
 	},
 	{
 		id: 14,
