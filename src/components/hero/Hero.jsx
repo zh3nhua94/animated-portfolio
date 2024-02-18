@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 
 const textVariants = {
 	initial: {
-		x: -500,
+		x: -100,
 		opacity: 0,
 	},
 	animate: {
 		x: 0,
 		opacity: 1,
 		transition: {
-			duration: 1,
+			duration: 0.5,
 			staggerChildren: 0.1,
 		},
 	},
@@ -81,12 +81,12 @@ const Hero = () => {
 				<div className="imageColumn">
 					<motion.div
 						className="imageContainer"
-						initial={{ x: 500, opacity: 0 }}
+						initial={{ x: 100, opacity: 0 }}
 						animate={{
 							x: 0,
 							opacity: 1,
 							transition: {
-								duration: 1,
+								duration: 0.5,
 							},
 						}}
 					>
