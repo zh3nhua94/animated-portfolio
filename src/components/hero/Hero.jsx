@@ -129,6 +129,7 @@ const Hero = () => {
 						<img
 							// style={{ display: "none" }}
 							src="/hero2.jpg"
+							srcSet="/hero2-md.jpg 1200w, /hero2-sm.jpg 600w"
 							alt=""
 						/>
 					</motion.div>

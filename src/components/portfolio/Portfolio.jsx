@@ -19,10 +19,9 @@ const Single = ({ item, setModalShow, index, lastItem }) => {
 		// offset: ["start start", "end start"],
 	});
 
-	const y =
-		width > 768
-			? useTransform(scrollYProgress, [0, 1], [-300, 300])
-			: useTransform(scrollYProgress, [0, 1], [-100, 100]);
+	const transformYSettings = width > 768 ? [-300, 300] : [-100, 100];
+	const y = useTransform(scrollYProgress, [0, 1], transformYSettings);
+
 	return (
 		<section
 			className="portfolio-section"

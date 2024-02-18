@@ -1,4 +1,6 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
@@ -111,8 +113,8 @@ const Services = () => {
 					<motion.div className="box">
 						<h6>Frontend Developer</h6>
 						<p>
-							I build high-performing, beautiful frontend products with great user experiences. If you're interested in
-							past projects, you can view them here.
+							I build high-performing, beautiful frontend products with great user experiences. If you are interested in
+							my past projects, you can view them here.
 						</p>
 						<a href="/projects">See Frontend Projects</a>
 					</motion.div>
