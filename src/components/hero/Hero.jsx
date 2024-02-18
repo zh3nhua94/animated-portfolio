@@ -32,7 +32,7 @@ const sliderVariants = {
 	animate: {
 		x: "200%",
 		transition: {
-			duration: 30,
+			duration: 40,
 			repeat: Infinity,
 			repeatType: "mirror",
 			times: [0, 1],
@@ -144,8 +144,8 @@ const Hero = () => {
 				<motion.span
 					initial={{ opacity: 0 }}
 					animate={{
-						opacity: [0, 0, 1],
-						transition: { duration: 2, times: [0, 0.8, 1] },
+						opacity: [0, 1],
+						transition: { duration: 1, times: [0, 1] },
 					}}
 				>
 					React Web Developer
