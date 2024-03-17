@@ -70,6 +70,16 @@ const portfolioData = [
 		code: "https://github.com/zh3nhua94/autumn-ecommerce",
 	},
 	{
+		id: 16,
+		title: "Mobile Job Search App",
+		cat: ["react-native"],
+		img: "/mobile/mobile-job-app-img.jpg",
+		siteImg: "/mobile/mobile-job-app-img.jpg",
+		descTitle: "Technology involved:",
+		desc: "React Native, Expo Router, Functional components, Dynamic data fetching with custom useFetch hook, axios, rapid API",
+		code: "https://github.com/zh3nhua94/mobile-job-app",
+	},
+	{
 		id: 14,
 		title: "Sweather Weather",
 		cat: ["vuejs", "frontend"],

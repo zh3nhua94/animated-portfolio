@@ -100,6 +100,7 @@ const PastWorks = () => {
 					<Tab>All</Tab>
 					<Tab>React</Tab>
 					<Tab>Frontend Projects</Tab>
+					<Tab>React Native</Tab>
 				</TabList>
 				{/* ALL */}
 				<TabPanel>
@@ -160,6 +161,34 @@ const PastWorks = () => {
 					<div className="tab-container">
 						{items
 							.filter((item) => item.cat.includes("frontend"))
+							.map((item, index) => (
+								<div
+									data-aos="fade-right"
+									data-aos-duration="1000"
+									data-aos-delay={(index + 1) % 3 === 1 ? "0" : (index + 1) % 3 === 2 ? "100" : "200"}
+									key={item.title + index}
+									onClick={() =>
+										setModalShow({
+											launch: true,
+											modalItem: item,
+										})
+									}
+								>
+									<div className="tab-content">
+										<img src={item.img} />
+										<h3>
+											<span className="conent-title">{item.title}</span>
+										</h3>
+									</div>
+								</div>
+							))}
+					</div>
+				</TabPanel>
+				{/* React Native */}
+				<TabPanel>
+					<div className="tab-container">
+						{items
+							.filter((item) => item.cat.includes("react-native"))
 							.map((item, index) => (
 								<div
 									data-aos="fade-right"
