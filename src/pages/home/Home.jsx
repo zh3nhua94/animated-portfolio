@@ -1,11 +1,11 @@
 import React from "react";
 import Hero from "../../components/hero/Hero";
-// import Parallax from "../../components/parallax/Parallax";
+import Parallax from "../../components/parallax/Parallax";
 import Services from "../../components/Services/Services";
 import Portfolio from "../../components/portfolio/Portfolio";
 import Contact from "../../components/contact/Contact";
 
-const Parallax = React.lazy(() => import("../../components/parallax/Parallax"));
+// const Parallax = React.lazy(() => import("../../components/parallax/Parallax"));
 
 const Home = () => {
 	return (
