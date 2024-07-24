@@ -35,7 +35,6 @@ const Single = ({ item, setModalShow, index, lastItem }) => {
 					>
 						<div className="pf-imgContainer">
 							<img
-								loading="lazy"
 								src={item.img}
 								alt=""
 								onClick={() =>
